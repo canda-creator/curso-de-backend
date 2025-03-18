@@ -72,4 +72,27 @@ print(calculofinal)
 
 nombre = input("¿Cuál es tu nombre?")
 
-print(nombre.upper() , nombre.lower() , nombre.title() )
+print("En mayuscula es: " , nombre.upper())
+print("En minuscula es: " , nombre.lower()) 
+print("La primera letra del nombre es " , nombre.title()) 
+
+### 2️⃣ Contador de caracteres en una frase
+
+frase = input("Dime una frase")
+caracteres = len (frase)
+
+print("La frase tiene" , caracteres, "caracteres")
+
+### 3️⃣ Correo electrónico en minúsculas
+
+correo = input("Dime tu correo")
+minuscula = correo.lower()
+
+print("Tu correo en minuscula es:", minuscula)
+
+### 4️⃣ Convertir título de un libro
+
+titulo = input("Dime tu libro favorito")
+titulo2 = titulo.title()
+
+print("Tu libro favorito es", titulo2)
