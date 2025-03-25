@@ -1,3 +1,4 @@
+#Ejercicios para el profe
 #Ejercicio 1
 
 largo = int(input("Ingresá el largo del rectángulo"))
