@@ -28,13 +28,13 @@ while contraseñaIngreso != contraseña:
 print("Acceso concedido!")
 
 
-
 contraseñaPython = input("Ingrese la contraseña: ")
 while contraseñaPython != "Python123":
     print("Contraseña incorrecta")
     contraseñaPython = input("Ingrese la contraseña: ") 
 
 print("Acceso concedido!")
+
 
 cero = 0
 numeroUsuario = int(input("Ingresá un número"))
@@ -47,6 +47,8 @@ print("La suma total es: ", cero)
 
 
 numeroAleatorio= random.randint(1,10)
+print("El numero aleatorio es: ", numeroAleatorio)
+
 numeroAdivinar = int(input("Adiviná el número"))
 
 while numeroAdivinar != numeroAleatorio:
@@ -58,17 +60,18 @@ print("Adivinaste!")
 
 intentos = 5
 numeroSecreto = random.randint(1,20)
+print("El numero secreto es: ", numeroSecreto)
 
 while intentos > 0:
     adivinar = int(input("🎲 Adivina el número (1-20). Tenés 5 intentos."))
-    if numeroSecreto == adivinar :
+    if adivinar == numeroSecreto :
         print("🎉 ¡Adivinaste!")
         break
 
-    elif numeroSecreto >= adivinar:
+    elif adivinar >= numeroSecreto:
         print("🔹 Muy alto.")
 
-    elif numeroSecreto <= adivinar:
+    elif adivinar <= numeroSecreto:
         print("🔹 Muy bajo.")
     
     intentos -= 1
